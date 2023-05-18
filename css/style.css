@@ -1,0 +1,58 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+button,
+input {
+	border: none;
+	outline: none;
+	background: none;
+}
+
+:root {
+	--darkestBlue: #0a2647;
+	--darkBlue: #144272;
+	--blue: #205295;
+	--lightBlue: #2c74b3;
+}
+
+.visualization-container {
+	display: grid;
+
+	align-items: end;
+	gap: 1px;
+
+	width: 90%;
+	height: 80%;
+
+	background-color: var(--darkestBlue);
+}
+
+.element {
+	height: 50%;
+	background-color: var(--lightBlue);
+}
+
+.sort-btn {
+	position: absolute;
+	right: 0;
+	top: 0;
+
+	padding: 10px 20px;
+
+	background-color: var(--darkBlue);
+
+	color: #ffffff;
+	font-size: 20px;
+
+	cursor: pointer;
+}
